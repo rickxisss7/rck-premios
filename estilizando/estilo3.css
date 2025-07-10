@@ -1,0 +1,106 @@
+@charset "UTF-8";
+
+/* conteúdo  */
+
+.title-1 {
+    font-family: "Poppins", sans-serif;
+    font-size: 12px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.product {
+    text-align: center;
+}
+
+.product h3 {
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+
+}
+
+.product p {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.name-product {
+    font-weight: 800;
+}
+
+.img-conteudo {
+    border-radius: 20px;
+}
+
+.gli :hover .descricion {
+    opacity: 1;
+}
+
+/* menu de compras */
+
+.title-cotas {
+    font-family: "Poppins", sans-serif;
+    font-size: 30px;
+
+}
+
+.menu-cotas {
+    text-align: center;
+    margin-top: 90px;
+    margin-bottom: 30px;
+}
+
+#numero {
+    width: 45%;
+    padding: 8px;
+    text-align: center;
+    background-color: rgb(248, 1, 1);
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+.conteudo-cotas p {
+     font-family: "Open Sans", sans-serif; 
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+.qr-code {
+    background-color: rgb(0, 0, 0);
+    padding: 10px;
+    width: 50%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.qr-code a {
+    text-decoration: none;
+    color: white;
+    font-family: "Open Sans", sans-serif; 
+
+}
+
+.conteudo-cotas {
+   margin-top: 30px;
+   background-color: rgb(158, 158, 158);
+   width: 80%;
+   border-radius: 10px;
+   margin: 0 auto;
+   padding: 20px;
+}
+
+#numero::placeholder {
+    color: rgba(255, 255, 255, 0.699);
+   font-family: "Roboto", sans-serif;
+}

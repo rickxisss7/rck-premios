@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+/* HEADER  */
+
+.cabecalho {
+  background-color: rgb(253, 209, 173);
+  padding: 10px;
+}
+
+.name-cabecalho {
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    padding: 5px;
+    color: rgb(255, 255, 255);
+}
+
+.redes-sociais {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 10px;
+   
+}
+
+.redes-sociais img {
+    cursor: pointer;
+    background-color: rgba(255, 251, 247, 0.466);
+    border-radius: 10px;
+    padding: 2px;
+}
+

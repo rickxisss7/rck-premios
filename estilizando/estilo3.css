@@ -78,6 +78,28 @@
     border-radius: 5px;
 }
 
+#numero3 {
+    width: 45%;
+    padding: 8px;
+    text-align: center;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+#numero4 {
+    width: 45%;
+    padding: 8px;
+    text-align: center;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
 .conteudo-cotas p {
      font-family: "Open Sans", sans-serif; 
     font-weight: 700;
@@ -87,7 +109,7 @@
 .qr-code {
     background-color: rgb(0, 0, 0);
     padding: 10px;
-    width: 50%;
+    width: 60%;
     margin: 20px auto;
     display: flex;
     justify-content: center;
@@ -131,6 +153,14 @@
 
 #numero2::placeholder {
     color: rgba(255, 255, 255, 0.938);
+   font-family: "Roboto", sans-serif;
+}
+#numero3::placeholder {
+    color: rgba(0, 0, 0, 0.938);
+   font-family: "Roboto", sans-serif;
+}
+#numero4::placeholder {
+    color: rgba(0, 0, 0, 0.938);
    font-family: "Roboto", sans-serif;
 }
 

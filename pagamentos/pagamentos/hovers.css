@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+.end-buy a:hover {
+    background-color: rgb(163, 8, 8);
+    transition: 0.5s ease-in-out;
+}
+
+#cred {
+    cursor: pointer;
+}

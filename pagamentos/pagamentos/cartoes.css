@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+.hiper {
+    border-radius: 5px;
+}
+
+
+#express {
+    border-radius: 16px;
+    
+}
+
+.elo {
+    border-radius: 25px;
+}
+
+.mastercard {
+    background-color: white;
+    border-radius: 5px;
+    margin: 0 10px;
+}
+
+/* finalizar compra  */
+
+.end-buy a {
+text-decoration: none;
+background-color: rgba(255, 38, 38, 0.815);
+border-radius: 5px;
+padding: 15px;
+color: white;
+font-family: "Montserrat", sans-serif;
+font-weight: bold;
+font-size: 15px;
+}
+
+.end-buy {
+    text-align: center;
+    margin-top: 40px;
+}

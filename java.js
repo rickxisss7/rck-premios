@@ -35,6 +35,8 @@ resultado.textContent = `O VALOR DA SUA COTA: R$ ${total}`;
 
 });
 
+// tttttt
+
 const input2 = document.getElementById('numero2');
 
 input2.addEventListener('input', function () {
@@ -67,58 +69,72 @@ resultado2.textContent = `O VALOR DA SUA COTA: R$ ${total2}`;
 
 });
 
-// QR CODE
+// ttt
 
+const input3 = document.getElementById('numero3');
 
-  const inputNumero = document.getElementById('numero');
-  const gerarQR = document.getElementById('qrcode');
+input3.addEventListener('input', function () {
+    let valor = parseInt(this.value, 10);
 
-  inputNumero.addEventListener('input', function () {
+    if (isNaN(valor)) {
+        this.value = '';
+    } else if (valor < 0) {
+        this.value = 0;
+    } else if (valor > 1000) {
+        this.value = 1000;
+    }
+});
+
+const input3Cotas = document.getElementById('numero3');
+const resultado3 = document.getElementById('resultado3');
+
+input3Cotas.addEventListener('input', function () {
     let quantidade = parseInt(this.value, 10);
-    if (isNaN(quantidade) || quantidade < 0) quantidade = 0;
-    else if (quantidade > 1000) quantidade = 1000;
 
-    const total = (quantidade * valorCota).toFixed(2).replace('.', ',');
-    resultado.textContent = `O VALOR DA SUA COTA R$ ${total}`;
-  });
-
-  gerarQR.addEventListener('click', function (e) {
-    e.preventDefault();
-
-    const quantidade = parseInt(inputNumero.value, 10);
-
-    if (!quantidade || quantidade <= 0) {
-      alert('Por favor, informe uma quantidade válida.');
-      return;
+    if (isNaN(quantidade) || quantidade < 0) {
+        quantidade = 0;
+    } else if (quantidade > 1000) {
+        quantidade = 1000;
+        this.value = 1000;
     }
 
-    const totalReais = (quantidade * valorCota).toFixed(2).replace('.', ',');
-    const textoQR = `Pagamento R$ ${totalReais}`;
+const total3 = (quantidade * valorCota).toFixed(2).replace('.', ',');
+resultado3.textContent = `O VALOR DA SUA COTA: R$ ${total3}`;
 
-    const qrURL = `https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/QR_code_for_mobile_English_Wikipedia.svg/1200px-QR_code_for_mobile_English_Wikipedia.svg.png`;
+});
 
-    // Cria nova janela
-    const novaJanela = window.open('', '_blank');
+//    4 
 
-    const imgQRCode = document.querySelector('.qr-code img');
-imgQRCode.src = 'novo-caminho/qr-code.png';
 
-    novaJanela.document.write(`
-      <html>
-        <head>
-          <title>Pagamento QR Code</title>
-          <style>
-            body { font-family: Arial, sans-serif; text-align: center; margin-top: 50px; }
-            h2 { margin-bottom: 20px; }
-            img { border: 1px solid #ccc; padding: 10px; width: 200px; }
-          </style>
-        </head>
-        <body>
-          <h2>Pagamento de R$ ${totalReais}</h2>
-          <img src="${qrURL}" alt="QR Code">
-          <p style="margin-top: 15px;">Escaneie para pagar</p>
-        </body>
-      </html>
-    `);
-  });
+const input4 = document.getElementById('numero2');
+
+input4.addEventListener('input', function () {
+    let valor = parseInt(this.value, 10);
+
+    if (isNaN(valor)) {
+        this.value = '';
+    } else if (valor < 0) {
+        this.value = 0;
+    } else if (valor > 1000) {
+        this.value = 1000;
+    }
+});
+
+const input4Cotas = document.getElementById('numero4');
+const resultado4 = document.getElementById('resultado4');
+
+input4Cotas.addEventListener('input', function () {
+    let quantidade = parseInt(this.value, 10);
+
+    if (isNaN(quantidade) || quantidade < 0) {
+        quantidade = 0;
+    } else if (quantidade > 1000) {
+        quantidade = 1000;
+        this.value = 1000;
+    }
+
+const total4 = (quantidade * valorCota).toFixed(2).replace('.', ',');
+resultado4.textContent = `O VALOR DA SUA COTA: R$ ${total4}`;
+
+});
 

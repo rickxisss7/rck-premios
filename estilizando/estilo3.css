@@ -34,6 +34,7 @@
 
 .img-conteudo {
     border-radius: 20px;
+
 }
 
 .gli :hover .descricion {
@@ -98,6 +99,16 @@
    border-radius: 10px;
    margin: 0 auto;
    padding: 20px;
+   text-align: center;
+}
+
+.container-product {
+    text-align: center;
+
+}
+
+.container-menu {
+    text-align: center;
 }
 
 #numero::placeholder {

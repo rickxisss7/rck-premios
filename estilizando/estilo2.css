@@ -2,9 +2,15 @@
 
 /* HEADER  */
 
+header {
+background-color: rgb(255, 1, 1);
+width: 100%;
+}
+
 .cabecalho {
-  background-color: rgb(253, 209, 173);
+  
   padding: 10px;
+  
 }
 
 .name-cabecalho {
@@ -12,6 +18,7 @@
     text-align: center;
     padding: 5px;
     color: rgb(255, 255, 255);
+    
 }
 
 .redes-sociais {

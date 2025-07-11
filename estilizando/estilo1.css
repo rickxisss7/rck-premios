@@ -30,6 +30,13 @@ span {
 .gli {
     color: rgb(255, 14, 14);
     font-size: 18px;
+    margin-left: 5px;
+}
+
+.tsi {
+    color:#0b4aa8 ;
+    font-size: 18px;
+    margin-left: 5px;
 }
 
 #qrcd {

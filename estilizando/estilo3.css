@@ -12,6 +12,7 @@
 
 .product {
     text-align: center;
+    margin: 30px 0;
 }
 
 .product h3 {
@@ -66,6 +67,17 @@
     border-radius: 5px;
 }
 
+#numero2 {
+    width: 45%;
+    padding: 8px;
+    text-align: center;
+    background-color: #0b4aa8;
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
 .conteudo-cotas p {
      font-family: "Open Sans", sans-serif; 
     font-weight: 700;
@@ -97,7 +109,7 @@
    background-color: rgb(158, 158, 158);
    width: 80%;
    border-radius: 10px;
-   margin: 0 auto;
+   margin: 30px auto;
    padding: 20px;
    text-align: center;
 }
@@ -109,9 +121,36 @@
 
 .container-menu {
     text-align: center;
+    margin-top: 30px;
 }
 
 #numero::placeholder {
-    color: rgba(255, 255, 255, 0.699);
+    color: rgba(255, 255, 255, 0.938);
    font-family: "Roboto", sans-serif;
+}
+
+#numero2::placeholder {
+    color: rgba(255, 255, 255, 0.938);
+   font-family: "Roboto", sans-serif;
+}
+
+/* linha premium */
+
+.name-premium {
+      font-family: "Poppins", sans-serif;
+      text-align: center;
+      margin-bottom: 30px;
+}
+
+
+
+.premium img{
+ border-radius: 5px;
+ 
+
+}
+
+.premium {
+    text-align: center;
+    margin-top: 50px;
 }

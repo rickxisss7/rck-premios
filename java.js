@@ -1,5 +1,6 @@
 const input = document.getElementById('numero');
 
+
 input.addEventListener('input', function () {
     let valor = parseInt(this.value, 10);
 
@@ -13,7 +14,9 @@ input.addEventListener('input', function () {
 });
 
 const inputCotas = document.getElementById('numero');
+
 const resultado = document.getElementById('resultado');
+
 const valorCota = 0.50;
 
 inputCotas.addEventListener('input', function () {
@@ -29,6 +32,38 @@ inputCotas.addEventListener('input', function () {
 
 const total = (quantidade * valorCota).toFixed(2).replace('.', ',');
 resultado.textContent = `O VALOR DA SUA COTA: R$ ${total}`;
+
+});
+
+const input2 = document.getElementById('numero2');
+
+input2.addEventListener('input', function () {
+    let valor = parseInt(this.value, 10);
+
+    if (isNaN(valor)) {
+        this.value = '';
+    } else if (valor < 0) {
+        this.value = 0;
+    } else if (valor > 1000) {
+        this.value = 1000;
+    }
+});
+
+const input2Cotas = document.getElementById('numero2');
+const resultado2 = document.getElementById('resultado2');
+
+input2Cotas.addEventListener('input', function () {
+    let quantidade = parseInt(this.value, 10);
+
+    if (isNaN(quantidade) || quantidade < 0) {
+        quantidade = 0;
+    } else if (quantidade > 1000) {
+        quantidade = 1000;
+        this.value = 1000;
+    }
+
+const total2 = (quantidade * valorCota).toFixed(2).replace('.', ',');
+resultado2.textContent = `O VALOR DA SUA COTA: R$ ${total2}`;
 
 });
 
